@@ -9,6 +9,14 @@ package components;
  * @author gouraya
  */
 public class FallEntree implements Entree {
-
-    
+private String name;
+ public FallEntree(String name) {
+        this.name = name;
+    }
+  @Override
+    public String toString() {
+        return name;
+    }
 }
+    
+

@@ -9,6 +9,18 @@ package components;
  * @author gouraya
  */
 public class FallMainCourse implements MainCourse{
-    
+  private String name;
+
+    // Constructor
+    public FallMainCourse(String name) {
+        this.name = name;
+    }
+
+    // toString method to return the name of the main course
+    @Override
+    public String toString() {
+        return name;
+    }
+}  
    
-}
+

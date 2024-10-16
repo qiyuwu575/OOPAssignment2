@@ -15,9 +15,9 @@ import components.Entree;
  */
 public interface RestaurantMenuFactory {
     
-    public Drink createDrink();
-    public MainCourse createMainCourse();
-    public Entree createEntree();
-    public Dessert createDessert();
+    public Drink[] createDrink();
+    public MainCourse[] createMainCourse();
+    public Entree[] createEntree();
+    public Dessert[] createDessert();
     
 }

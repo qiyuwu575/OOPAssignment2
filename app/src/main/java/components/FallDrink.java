@@ -9,6 +9,13 @@ package components;
  * @author gouraya
  */
 public class FallDrink implements Drink {
-
+ private String name;
+ public FallDrink(String name) {
+        this.name = name;
+    }
+@Override
+    public String toString() {
+        return name;
     
+}
 }

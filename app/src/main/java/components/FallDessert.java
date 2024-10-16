@@ -9,6 +9,14 @@ package components;
  * @author gouraya
  */
 public class FallDessert implements Dessert {
-
+    private String name;
+    public FallDessert(String name) {
+        this.name = name;
+    }
+        @Override
+    public String toString() {
+        return name;
     
 }
+    }
+

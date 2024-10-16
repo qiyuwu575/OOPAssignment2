@@ -1,3 +1,4 @@
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -19,8 +20,11 @@ public class FallRestaurantMenu extends RestaurantMenu {
     
     @Override
     public void populateMenu() {
-        System.out.println("Adding items to " + getName());
+        System.out.println("populating " + getName());
         // Insert code to assign menu items created
-        
+        this.entrees = theFactory.createEntree();
+        this.mainCourses = theFactory.createMainCourse();
+        this.desserts = theFactory.createDessert();
+        this.drinks = theFactory.createDrink();
     }
 }

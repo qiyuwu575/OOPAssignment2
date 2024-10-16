@@ -9,6 +9,17 @@ package components;
  * @author gouraya
  */
 public class SpringDrink implements Drink  {
+private String name;
 
+    // Constructor
+    public SpringDrink(String name) {
+        this.name = name;
+    }
+
+    // toString method to return the name of the drink
+    @Override
+    public String toString() {
+        return name;
+    }
 
 }

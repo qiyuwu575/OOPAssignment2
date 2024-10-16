@@ -9,6 +9,17 @@ package components;
  * @author gouraya
  */
 public class WinterEntree implements Entree {
-  
+   private String name;
+
+    // Constructor
+    public WinterEntree(String name) {
+        this.name = name;
+    }
+
+    // toString method to return the name of the entree
+    @Override
+    public String toString() {
+        return name;
+    }
     
 }

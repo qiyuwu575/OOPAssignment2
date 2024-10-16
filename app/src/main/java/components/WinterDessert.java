@@ -9,6 +9,17 @@ package components;
  * @author gouraya
  */
 public class WinterDessert implements Dessert {
-    
+     private String name;
+
+    // Constructor
+    public WinterDessert(String name) {
+        this.name = name;
+    }
+
+    // toString method to return the name of the dessert
+    @Override
+    public String toString() {
+        return name;
+    }
  
 }
