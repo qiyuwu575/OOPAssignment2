@@ -11,12 +11,26 @@ import components.FallDrink;
 import components.FallDessert;
 import components.FallEntree;
 import components.FallMainCourse;
+
 /**
- *
+ * FallRestaurantMenuFactory is a concrete implementation of the RestaurantMenuFactory interface.
+ * It is responsible for creating the specific menu items (Entrees, Main Courses, Desserts, and Drinks)
+ * that are relevant to the Fall season.
+ * 
+ * Each method in this factory creates an array of specific Fall items, such as fall-themed drinks,
+ * main courses, entrees, and desserts, to populate the Fall menu.
+ * 
+ * This class implements the Abstract Factory pattern.
+ * 
  * @author gouraya
  */
 public class FallRestaurantMenuFactory implements RestaurantMenuFactory {
 
+    /**
+     * Creates an array of Drinks specific to the Fall menu.
+     * 
+     * @return An array of Drink objects containing Fall-themed drinks.
+     */
     @Override
     public Drink[] createDrink() {
         // Creates drinks specific to the Fall menu
@@ -27,6 +41,11 @@ public class FallRestaurantMenuFactory implements RestaurantMenuFactory {
         };
     }
 
+    /**
+     * Creates an array of Main Courses specific to the Fall menu.
+     * 
+     * @return An array of MainCourse objects containing Fall-themed main courses.
+     */
     @Override
     public MainCourse[] createMainCourse() {
         // Creates main courses specific to the Fall menu
@@ -37,6 +56,11 @@ public class FallRestaurantMenuFactory implements RestaurantMenuFactory {
         };
     }
 
+    /**
+     * Creates an array of Entrees specific to the Fall menu.
+     * 
+     * @return An array of Entree objects containing Fall-themed entrees.
+     */
     @Override    
     public Entree[] createEntree() {
         // Creates entrees specific to the Fall menu
@@ -47,6 +71,11 @@ public class FallRestaurantMenuFactory implements RestaurantMenuFactory {
         };
     }
 
+    /**
+     * Creates an array of Desserts specific to the Fall menu.
+     * 
+     * @return An array of Dessert objects containing Fall-themed desserts.
+     */
     @Override    
     public Dessert[] createDessert() {
         // Creates desserts specific to the Fall menu
